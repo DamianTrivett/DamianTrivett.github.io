@@ -72,6 +72,7 @@ main {
     margin: 0 auto;
     /* 
     * CSS clamp can be very handy!
+    * First argument is min width, second is what it's aiming for (normally a % or vw) and the third is the max
     * https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
      */
     width: clamp(250px, 50%, 1200px);
