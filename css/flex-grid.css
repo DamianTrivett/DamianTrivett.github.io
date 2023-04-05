@@ -1,0 +1,57 @@
+.myComplexGrid1 {
+    font-size: smaller;
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    grid-gap: 20px;
+ 
+}
+
+.cgi1,
+.cgi5,
+.cgi9 {
+    background-color: burlywood;
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.cgi2,
+.cgi6,
+.cgi10
+ {
+    background-color: chocolate;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.cgi3,
+.cgi7,
+.cgi11
+ {
+    background-color: lightsalmon;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.cgi4,
+.cgi8,
+.cgi12
+ {
+    background-color: khaki;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+[class^="cgi"] {
+    outline: 2px dashed plum;
+    padding: 1rem;
+    
+}
+
+/* Your grid overflowed a bit on phones */
+@media screen and (min-width: 560px) {
+    .myComplexGrid1 {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
