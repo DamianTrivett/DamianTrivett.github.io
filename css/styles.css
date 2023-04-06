@@ -92,22 +92,29 @@ main {
     font-size: smaller;
     display: grid;
     width: 100%;
-    padding: 2rem;
-    grid-gap: 20px;
+    padding: 1rem;
+    grid-gap: 10px;
  
 }
 
 .gi1,
-.gi3,
-.gi5 {
+.gi4,
+.gi7 {
     background-color: burlywood;
 }
 
 .gi2,
-.gi4,
-.gi6
+.gi5,
+.gi8
  {
     background-color: chocolate;
+}
+
+.gi3,
+.gi6,
+.gi9
+ {
+    background-color: peachpuff;
 }
 
 .gContent{
@@ -124,7 +131,7 @@ main {
 /* Your grid overflowed a bit on phones */
 @media screen and (min-width: 560px) {
     .myGrid1 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
