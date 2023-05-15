@@ -129,7 +129,7 @@ main {
 
 [class^="gi"]:hover {
     transition: transform 0.2s;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 /* Your grid overflowed a bit on phones */
@@ -173,5 +173,10 @@ main {
         border-radius: 2px;
         background-color: silver;
         border: 9px solid gold;
+    }
+
+    [class^="gi"]:hover {
+        transition: transform 0.2s;
+        transform: scale(1.4);
     }
 }
